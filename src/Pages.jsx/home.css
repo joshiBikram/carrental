@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+    .swiper-slide swiper-slide-prev {
+        position: relative;
+        margin: 0 0 !important;
+        width: 100% !important;
+    }
+
+ .box{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        max-width: 35%;
+        margin: 0 0 !important;
+        width: 100% !important;
+        /* animation-banner */
+        text-align: center !important;
+        overflow: hidden;
+        line-height: 1;
+        h1{
+            font-size: 50px;
+        }
+    }
+    /* animation-banner */
+      .span1 {
+        
+        animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 1.5s;
+      }
+      /* animation-banner */
+      @keyframes reveal {
+        0% {
+          transform: translate(0,100%);
+        }
+        100% {
+          transform: translate(0,0);
+        }
+      }
+     
+
+.a-img{
+filter: brightness(0.7);
+width: 100%;
+height: 600px;
+object-fit: cover;
+}
+    .btn1{
+        background: #DD3333;
+        color: white ;
+        &:hover{
+        background: black;
+    }
+    }
+
+/* .par{
+    width: 50%;
+} */
+.icon{
+    width: 30px;
+    height: 25px;
+}
+.a1{
+    align-self: center;
+}
+.cicon{
+    width: 35px;
+    height: 25px;
+}
+.micon{
+    width: 30px;
+    height: 25px;
+    margin: 0 8px 0 0;
+}
+.box1{
+    border-right: 1px solid #eee;
+    overflow: hidden;
+    
+    img{
+        transition: 0.9s;
+        margin: 10px 0;
+    }
+
+    .parent1:hover{
+        transform: scale(1.2);
+    }
+    
+}
+
+.about{
+        /* max-width: 50%; */
+
+ul{
+    li::before{
+content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+background: url("../Img/tick.png") no-repeat; 
+background-size: contain;
+margin-right: 10px ;
+line-height: normal;
+}
+}
+}
+.featured{
+    p{
+        color: #6c6d72;
+        max-width: 50%;
+        margin: auto;
+        text-align: center;
+            
+    }
+   
+    .abc{
+        margin: auto;
+        display: block;
+        padding: 2px 7px;
+        background: red;
+    }
+    .effect{
+        background: #DD3333;
+        &:hover{
+            background: #020202;
+            color: #FFFFFF;
+        }
+    }
+    .light{
+        color: #6c6d72;
+    }
+    .dark{
+        color: #020202;
+        font-weight: bold;        
+    }
+}
+.theme{
+    background: url(../Img/aboutus-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin: 50px 0;
+    .box3{
+        position: relative;
+        padding: 100px 0;
+        color: #FFFFFF;
+        p{
+            line-height: normal;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        h2{
+            font-weight: bold;
+            line-height: 62px;
+            span{
+                color: #DD3333;
+            }
+        }
+
+    }
+}
+
+.caption{
+    color:#FFFFFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    overflow: hidden;
+    &:hover{
+        color: #DD3333;
+        transition: 1s;
+        text-decoration: none;
+        bottom: 20px;
+    }
+    h4{
+        text-transform: capitalize !important;
+        /* white-space: nowrap; */
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.work{
+    p{
+        max-width: 50%;
+        margin: auto;
+        text-align: center;
+        color: #6c6d72;
+    }
+    
+    h3{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        &:hover{
+            color: #DD3333;
+        }
+    }
+}
+.work .icon{
+    color: #DD3333;
+    font-size: 60px;
+    padding-left: 150px;
+
+}
+.team{
+    p{
+        max-width: 80%;
+        margin: 20px 0;
+    }
+}
+.team1{
+    background: black;
+    color: white;
+    padding-top: 20px;
+    h3{
+        font-weight: bold;
+    }
+    h5{
+        margin: 10px 0;
+    }
+    &:hover{
+        background: #DD3333;
+    }
+}
+.reg{
+width: 35%;
+height: auto;
+margin: auto;
+border: 1px solid rgba(0, 0, 0, .2);
+border-radius: .3rem;
+.top{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+.check{
+    color: #DD3333;
+    font-size: 2px;
+}
+} 
+.abt-rel{
+    height: 65vh;
+    width: 100%;
+    background: #DD3333;
+}
+.abt-abs{
+    height: 58vh;
+    width: 100%;
+    top: 23px;
+    left: 30px;
+}
+
+
+
+/* news img hover  */
+.image-container {
+    /* height: 400px ; */
+    
+    overflow: hidden !important;
+    display: inline-block;
+    position: relative;
+  }
+ 
+
+  .image-container img {
+    transition: transform 1s ease; /* Smooth zoom effect */
+    background-size: cover !important;
+  }
+
+  .image-container:hover img {
+    transform: scale(1.1); /* Slight zoom effect */
+    
+  }
+  .image-container:hover .h-news{
+    transform: translateY(-40px);
+    transition-duration: 1s;
+  } 
+  .image-container:hover .p-news{
+    transform: translateY(-45px);
+    transition-duration: 1s;
+    
+  }  
+  .h-news{
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px !important;
+    left: 15px;
+    /* max-width: 100%; */
+  } 
+  .h-news:hover{
+    color: #DD3333 !important;
+  }
+  .p-news{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    left: 15px;
+  }
+  
+
+  .cc:last-child{
+    border: none !important;
+}
+
+
+@media only screen and (max-width: 600px){
+    .box{
+        max-width: 100%;
+        top: 50%;
+        left: 50%;
+        padding: 0 0;
+        margin: 0 0;
+        
+        h1{
+            font-size: 35px;
+            
+        }
+        /* .span-b{
+            display: none;
+        } */
+        .a-img{
+            height: 400px;
+        }
+        
+    }
+
+    .last img{
+        width: 100% !important;
+    }
+    .box4 .des{
+        position: static !important;
+
+    }
+    .box4{
+        width: 100% !important;
+        padding: 25px 20px;
+    }
+    .reg{
+        width: 90%;
+    }
+    .box1{
+        border: none;
+    }
+    .image-container{
+        width: 100% !important;
+    }
+    .dis-n{
+        display: none;
+    }
+    
+}
+
+
+.last{
+    margin-top: 20px;
+.box4{
+    position: relative;
+    background: #DD3333;
+    width: 16.67%;
+    color: #FFFFFF;
+    .des{
+        position: absolute;
+        top: 75px;
+        left: 30px;
+    }
+}
+img{
+    height: auto;
+    width: 16.67%;
+}
+}
+
+    
+
